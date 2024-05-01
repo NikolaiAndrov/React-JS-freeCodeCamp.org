@@ -5,23 +5,26 @@ import "./index.css";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 
+const title = "The Women"; 
+const author = "Kristin Hannah";
+const img = "./images/image1.jpg";
+
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book></Book>
-      <Book></Book>
-      <Book></Book>
-      <Book></Book>
+      <Book title={title} author={author} img={img}></Book>
+      <Book title={title} author={author} img={img}></Book>
+      <Book title={title} author={author} img={img}></Book>
     </section>
   );
 };
 
-const Book = () => {
+const Book = (props) => {
   return (
     <article className="book">
-      <img src="./images/image1.jpg" alt="The Women" />
-      <h2>The Women</h2>
-      <h4>Kristin Hannah</h4>
+      <img src={props.img} alt={props.title} />
+      <h2>{props.title}</h2>
+      <h4>{props.author}</h4>
     </article>
   );
 };
