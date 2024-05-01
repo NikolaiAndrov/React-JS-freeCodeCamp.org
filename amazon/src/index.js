@@ -26,7 +26,7 @@ const Book = () => {
 
 const Image = () => (
   <img
-    src="https://images-na.ssl-images-amazon.com/images/I/913C+MR3S5L._AC_UL900_SR900,600_.jpg"
+    src="./images/image1.jpg"
     alt="The Women"
   />
 );
