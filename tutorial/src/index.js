@@ -3,13 +3,21 @@ import ReactDom from "react-dom/client";
 
 const root = ReactDom.createRoot(document.getElementById("root"));
 
-function Greeting() {
-  return(
-  <div>
-    <h1>Hello World!</h1>
-    <h2>This is my first component</h2>
-    <h3>Happy to learn React JS</h3>
-  </div>);
+const Greeting = () => {
+  return <h1>Hello World!</h1>;
+};
+
+const Message = () => {
+  return <p>Happy to learn React JS</p>;
+};
+
+function Result() {
+  return (
+    <>
+      <Greeting />
+      <Message />
+    </>
+  );
 }
 
-root.render(<Greeting />);
+root.render(<Result />);
