@@ -10,8 +10,8 @@ const root = ReactDom.createRoot(document.getElementById("root"));
 const BookList = () => {
   return (
     <section className="booklist">
-      {books.map((b) => {
-        return <Book {...b} key={b.key} />;
+      {books.map((b, index) => {
+        return <Book {...b} key={b.key} number={index} />;
       })}
     </section>
   );
