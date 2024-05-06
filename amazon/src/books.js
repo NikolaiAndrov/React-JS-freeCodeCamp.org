@@ -1,22 +1,26 @@
+import img1 from "./images/image1.jpg"
+import img2 from "./images/image2.jpg"
+import img3 from "./images/image3.jpg"
+
 export const books = [
   {
     id: 1,
     title: "The Women",
     author: "Kristin Hannah",
-    img: "https://m.media-amazon.com/images/I/913C+MR3S5L._SL1500_.jpg",
+    img: img1,
   },
 
   {
     id: 2,
     title: "Mom, I Want to Hear Your Story",
     author: "Jeffrey Mason",
-    img: "https://m.media-amazon.com/images/I/71sOqrd6JHL._SL1499_.jpg",
+    img: img2,
   },
 
   {
     id: 3,
     title: "The Lost Book of Herbal Remedies",
     author: "Claude Davis",
-    img: "https://m.media-amazon.com/images/I/71++zre30EL._SL1360_.jpg",
+    img: img3,
   },
 ];
